@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Menu </title>
+		<script src="https://simplycodingcourses.com/files/simplyjs/simply.js">
+</script>
+	<script>
+		function start() {
+			sjs.open();
+			var menu_txt = new sjs.Text("Menu", 20, "blue");
+				menu_txt.centerH();
+				var game_txt = new sjs.Text("Use the Arrow Keys to Control the Paddles. Don't let the Ball hit the floor or the ceiling!",28,"#ff0");
+				game_txt.centerH().offset(0,30);
+				var startBtn = new sjs.Button("Start", function(){
+					window.location = "pong.html";
+
+				});
+				startBtn.center()
+				var info_txt = new sjs.Text("Made by Josué Pineda",20,"green");
+					info_txt.bottom().centerH();
+		} //end start
+	</script>
+	</head>
+	<body onload="start()">
+		<h1> Menu </h1>
+
+		<div id="target" style="margin:auto;background:grey;"></div>
+	</body>
+</html>
